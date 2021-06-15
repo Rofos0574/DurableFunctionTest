@@ -41,20 +41,6 @@ namespace SamplePerformances
                 var outputInit = await context.CallActivityAsync<InitActivityOutput>(typeof(InitActivity).Name, inputInit);
                 log.LogInformation("> INIT");
 
-
-                // DO SOMETHING
-                for (int i = 0; i < 10; i++)
-                {
-                    log.LogInformation("< DO SOMETHING");
-                    var inputDoSomething = new DoSomethingActivityInput
-                    {
-                        JourneyContext = input
-                    };
-                    var outputDoSomething = await context.CallActivityAsync<DoSomethingActivityOutput>(typeof(DoSomethingActivity).Name, inputDoSomething);
-                    log.LogInformation("> DO SOMETHING");
-                }
-
-
                 // FINALIZE
                 log.LogInformation("< FINALIZE");
                 var finalizeInput = new FinalizeActivityInput
