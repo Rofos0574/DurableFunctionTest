@@ -1,5 +1,5 @@
-.pubxml
+*.pubxml
 .vs
 bin
 obj
-.user
+*.user

@@ -8,8 +8,7 @@
       }
     },
     "logLevel": {
-      "default": "Error",
-      "SamplePerformances": "Error"
+      "SamplePerformances": "Debug"
     }
   }
 }
